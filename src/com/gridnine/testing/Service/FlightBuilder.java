@@ -9,6 +9,7 @@ import com.gridnine.testing.Model.Flight;
 import com.gridnine.testing.Model.Segment;
 
 public class FlightBuilder {
+
     public static List<Flight> createFlights() {
         LocalDateTime threeDaysFromNow = LocalDateTime.now().plusDays(3);
         return Arrays.asList(
@@ -41,4 +42,5 @@ public class FlightBuilder {
         }
         return new Flight(segments);
     }
+    
 }
